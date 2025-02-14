@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Your Design - Makuwear</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Makuwear</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">How It Works</a>
+      <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+
+  <section id="upload">
+    <h2>Upload Your Design</h2>
+    <form id="uploadForm">
+      <input type="file" id="imageUpload" accept="image/*" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p>Price: ₹100 per image</p>
+    <p>Payment UPI: <strong>gunj@fam</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Makuwear. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple JavaScript to handle form submission
+    document.getElementById('uploadForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for uploading your design! Please make the payment to complete the process.');
+    });
+  </script>
+</body>
+</html>
