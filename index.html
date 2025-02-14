@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makuwear - AI-Powered Fashion</title>
+  <style>
+    /* Basic CSS for Minimalist Design */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    nav a:hover {
+      color: #007BFF;
+    }
+    #hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #fff;
+    }
+    #hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 18px;
+      color: #666;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    #upload {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    #upload h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    #uploadForm {
+      margin-top: 20px;
+    }
+    #uploadForm input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    #uploadForm button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #uploadForm button:hover {
+      background-color: #0056b3;
+    }
+    #contact {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+    #contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Makuwear</h1>
+    <nav>
+      <a href="#upload">Upload</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>AI-Powered Fashion Design</h2>
+    <p>Upload your design ideas and let us transform them into reality.</p>
+    <a href="#upload" class="cta-button">Get Started</a>
+  </section>
+
+  <section id="upload">
+    <h2>Upload Your Design</h2>
+    <form id="uploadForm">
+      <input type="file" id="imageUpload" accept="image/*" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p>Price: ₹100 per image</p>
+    <p>Payment UPI: <strong>gunj@fam</strong></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:ask.gunjmehta@gmail.com">ask.gunjmehta@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Makuwear. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple JavaScript to handle form submission
+    document.getElementById('uploadForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for uploading your design! We will process it and get back to you.');
+    });
+  </script>
+</body>
+</html>
